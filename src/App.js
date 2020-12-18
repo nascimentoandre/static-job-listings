@@ -3,6 +3,8 @@ import data from './data.json';
 import Header from "./components/Header";
 import Job from "./components/Job";
 
+// Need to add a way to filter jobs using tags
+
 export default function App() {
   return (
     <div className="app">
