@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import data from './data.json';
 import Header from "./components/Header";
 import Job from "./components/Job";
 
-// Need to add a way to filter jobs using tags
-
 export default function App() {
+  const [searchItem, setSearchItem] = useState('');
+
+  const filteredJobs = data.filter(job => {
+    return job.level.toLowerCase().includes(searchItem.toLowerCase()) || 
+    job.company.toLowerCase().includes(searchItem.toLowerCase()) || 
+    job.position.toLowerCase().includes(searchItem.toLowerCase()); 
+  });
+
   return (
     <div className="app">
       <Header />
-      {data.map((job) => {
+      <div className="search-container">
+        <input type="text" className="search-bar" name="search" placeholder="Search..." onChange={e => setSearchItem(e.target.value)} />
+      </div>
+      {filteredJobs.map((job) => {
         return <Job
+          key={job.id}
           id={job.id}
           logo={job.logo}
           company={job.company}
