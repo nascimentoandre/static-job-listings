@@ -1,21 +1,21 @@
 :root {
-    font-size: 15px;
-    font-family: 'Spartan', sans-serif;
-    font-weight: 500;
-    --bg-color: hsl(180, 52%, 96%);
-    --filter-tablets: hsl(180, 31%, 95%);
-    --dark-gcyan: hsl(180, 8%, 52%);
-    --vdark-gcyan: hsl(180, 14%, 20%);
-    --desaturated-cyan: hsl(180, 29%, 50%);
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  --bg-color: hsl(180, 52%, 96%);
+  --filter-tablets: hsl(180, 31%, 95%);
+  --dark-gcyan: hsl(180, 8%, 52%);
+  --vdark-gcyan: hsl(180, 14%, 20%);
+  --desaturated-cyan: hsl(180, 29%, 50%);
 }
 
 body {
-    /* margin: 0; */
-    padding: 0;
-    max-width: 1440px;
-    margin: 0 auto;
-    overflow-y: auto;
-    overflow-x: hidden;
+  /* margin: 0; */
+  padding: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .app {
@@ -32,16 +32,16 @@ body {
 }
 
 .header-div {
-    background-color: var(--desaturated-cyan);
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  background-color: var(--desaturated-cyan);
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .header-img {
-    height: 156px;
-    width: 1440px;
-    margin-bottom: -4px;
+  height: 156px;
+  width: 1440px;
+  margin-bottom: -4px;
 }
 
 .information {
@@ -75,7 +75,8 @@ body {
   margin-right: 1.3rem;
 }
 
-.new-tag, .featured-tag {
+.new-tag,
+.featured-tag {
   background-color: var(--desaturated-cyan);
   border-radius: 8px;
   color: white;
@@ -105,14 +106,23 @@ body {
   margin-right: 0.5rem;
 }
 
+.search-container {
+  text-align: center;
+}
+
+.search-bar {
+  margin: 3rem auto;
+  width: 30%;
+}
+
 .tags {
   display: flex;
   justify-content: space-around;
 }
 
 @media (max-width: 1440px) {
-  .header-img, .app {
-      width: 100vw;
+  .header-img,
+  .app {
+    width: 100vw;
   }
-
 }
