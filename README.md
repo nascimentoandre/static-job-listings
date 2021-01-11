@@ -1,6 +1,6 @@
 # Static Job Listings
 
-![Preview-Screens](https://github.com/nascimentoandre/static-job-listings/blob/main/home.png)
+![Preview-Screens](https://github.com/nascimentoandre/static-job-listings/blob/main/home2.png)
 
 # About
 
@@ -9,6 +9,5 @@ A static web page displaying job listings from dummy data. This is a challenge b
 # To do
 
 - Add responsive web design;
-- Add filter bar;
 - Upload a live version to the web.
 
